@@ -25,7 +25,7 @@ const OpportunityForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:8080/api/opportunities', formData, {
+            await axios.post('http://localhost:8080/api/opportunities', formData, {
                 headers: {
                     'Authorization': `Bearer ${localStorage.getItem('jwt_token')}`,
                     'Content-Type': 'application/json'

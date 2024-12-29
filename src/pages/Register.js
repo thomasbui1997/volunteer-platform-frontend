@@ -1,14 +1,14 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-import { AuthContext } from '../context/AuthContext';
+//import { AuthContext } from '../context/AuthContext';
 import './Register.css';
 
 const Register = () => {
     const navigate = useNavigate();
-    const { login } = useContext(AuthContext);
+    //const { login } = useContext(AuthContext);
 
     const initialValues = {
         username: '',
